@@ -135,6 +135,74 @@
   </div>
 </div>
 
+	<!-- Modal -->
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Install</h4>
+      </div>
+      <div class="modal-body">
+		<h4>Install item 4</h4>
+        <button type="button" class="btn" id="inst4">Install</button>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+       <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+	
+<!-- Modal -->
+<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Install</h4>
+      </div>
+      <div class="modal-body">
+		<h4>Install item 5</h4>
+        <button type="button" class="btn" id="inst5">Install</button>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+       <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+	
+<!-- Modal -->
+<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Install</h4>
+      </div>
+      <div class="modal-body">
+		<h4>Install item 6</h4>
+        <button type="button" class="btn" id="inst6">Install</button>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+       <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
 <script>
 $(document).ready(function(){
     $("#inst1").click(function(){
@@ -185,6 +253,59 @@ $(document).ready(function(){
 			}
 		}
     });	
+	
+	$("#inst4").click(function(){
+        $("#inst4").hide();
+		$("#inst4").parent().append('<div class="progress"><div class="progress-bar" role="progressbar" id="myBar3" style="width:1%"><span id="inststatus3">1%</span></div></div>');
+		var elem = document.getElementById("myBar3"); 
+		var width = 1;
+		var id = setInterval(frame, 10);
+		function frame() {
+			if (width >= 100) {
+				clearInterval(id);
+			} else {
+				width++; 
+				elem.style.width = width + '%'; 
+				$("#inststatus3").text(elem.style.width);
+			}
+		}
+    });	
+	
+	$("#inst5").click(function(){
+        $("#inst5").hide();
+		$("#inst5").parent().append('<div class="progress"><div class="progress-bar" role="progressbar" id="myBar4" style="width:1%"><span id="inststatus4">1%</span></div></div>');
+		var elem = document.getElementById("myBar4"); 
+		var width = 1;
+		var id = setInterval(frame, 10);
+		function frame() {
+			if (width >= 100) {
+				clearInterval(id);
+			} else {
+				width++; 
+				elem.style.width = width + '%'; 
+				$("#inststatus4").text(elem.style.width);
+			}
+		}
+    });	
+	
+	$("#inst6").click(function(){
+        $("#inst6").hide();
+		$("#inst6").parent().append('<div class="progress"><div class="progress-bar" role="progressbar" id="myBar5" style="width:1%"><span id="inststatus5">1%</span></div></div>');
+		var elem = document.getElementById("myBar5"); 
+		var width = 1;
+		var id = setInterval(frame, 10);
+		function frame() {
+			if (width >= 100) {
+				clearInterval(id);
+			} else {
+				width++; 
+				elem.style.width = width + '%'; 
+				$("#inststatus5").text(elem.style.width);
+			}
+		}
+    });	
+	
+	
 });
 </script>
 </html>
