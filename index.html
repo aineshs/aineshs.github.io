@@ -37,7 +37,7 @@
 				</div>
 			</div>
 		</a>
-		<a href="#" data-toggle="modal" data-target="#myModal3">				
+		<a href="#" data-toggle="modal" data-target="#myModal">				
 			<div class="col-md-2 panel panel-default">
 				<div class="panel-body">
 					<img src="http://placehold.it/150x150" alt="" class="img-responsive center-block" />
@@ -47,7 +47,7 @@
 				</div>
 			</div>
 		</a>
-		<a href="#" data-toggle="modal" data-target="#myModal4">				
+		<a href="#" data-toggle="modal" data-target="#myModal">				
 			<div class="col-md-2 panel panel-default">
 				<div class="panel-body">
 					<img src="http://placehold.it/150x150" alt="" class="img-responsive center-block" />
@@ -57,7 +57,7 @@
 				</div>
 			</div>
 		</a>
-		<a href="#" data-toggle="modal" data-target="#myModal5">				
+		<a href="#" data-toggle="modal" data-target="#myModal">				
 			<div class="col-md-2 panel panel-default">
 				<div class="panel-body">
 					<img src="http://placehold.it/150x150" alt="" class="img-responsive center-block" />
@@ -221,6 +221,89 @@ $(document).ready(function(){
 			}
 		}
     });
+	$("#inst2").click(function(){
+        $("#inst2").hide();
+		$("#inst2").parent().append('<div class="progress"><div class="progress-bar" role="progressbar" id="myBar1" style="width:1%"><span id="inststatus1">1%</span></div></div>');
+		var elem = document.getElementById("myBar1"); 
+		var width = 1;
+		var id = setInterval(frame, 10);
+		function frame() {
+			if (width >= 100) {
+				clearInterval(id);
+			} else {
+				width++; 
+				elem.style.width = width + '%'; 
+				$("#inststatus1").text(elem.style.width);
+			}
+		}
+    });
+	$("#inst3").click(function(){
+        $("#inst3").hide();
+		$("#inst3").parent().append('<div class="progress"><div class="progress-bar" role="progressbar" id="myBar2" style="width:1%"><span id="inststatus2">1%</span></div></div>');
+		var elem = document.getElementById("myBar2"); 
+		var width = 1;
+		var id = setInterval(frame, 10);
+		function frame() {
+			if (width >= 100) {
+				clearInterval(id);
+			} else {
+				width++; 
+				elem.style.width = width + '%'; 
+				$("#inststatus2").text(elem.style.width);
+			}
+		}
+    });	
+	
+	$("#inst4").click(function(){
+        $("#inst4").hide();
+		$("#inst4").parent().append('<div class="progress"><div class="progress-bar" role="progressbar" id="myBar3" style="width:1%"><span id="inststatus3">1%</span></div></div>');
+		var elem = document.getElementById("myBar3"); 
+		var width = 1;
+		var id = setInterval(frame, 10);
+		function frame() {
+			if (width >= 100) {
+				clearInterval(id);
+			} else {
+				width++; 
+				elem.style.width = width + '%'; 
+				$("#inststatus3").text(elem.style.width);
+			}
+		}
+    });	
+	
+	$("#inst5").click(function(){
+        $("#inst5").hide();
+		$("#inst5").parent().append('<div class="progress"><div class="progress-bar" role="progressbar" id="myBar4" style="width:1%"><span id="inststatus4">1%</span></div></div>');
+		var elem = document.getElementById("myBar4"); 
+		var width = 1;
+		var id = setInterval(frame, 10);
+		function frame() {
+			if (width >= 100) {
+				clearInterval(id);
+			} else {
+				width++; 
+				elem.style.width = width + '%'; 
+				$("#inststatus4").text(elem.style.width);
+			}
+		}
+    });	
+	
+	$("#inst6").click(function(){
+        $("#inst6").hide();
+		$("#inst6").parent().append('<div class="progress"><div class="progress-bar" role="progressbar" id="myBar5" style="width:1%"><span id="inststatus5">1%</span></div></div>');
+		var elem = document.getElementById("myBar5"); 
+		var width = 1;
+		var id = setInterval(frame, 10);
+		function frame() {
+			if (width >= 100) {
+				clearInterval(id);
+			} else {
+				width++; 
+				elem.style.width = width + '%'; 
+				$("#inststatus5").text(elem.style.width);
+			}
+		}
+    });	
 	
 	
 });
