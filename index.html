@@ -223,7 +223,7 @@ $(document).ready(function(){
     });
 	$("#inst2").click(function(){
         $("#inst2").hide();
-		$("#inst2").parent().append('<div class="progress" style="height:20px"><div class="progress-bar" role="progressbar" id="myBar1" style="width:1%;font-size:15px;padding-top:4px"><span id="inststatus1">70% Complete</span></div></div>');
+		$("#inst1").parent().append('<div class="progress" style="height:20px"><div class="progress-bar" role="progressbar" id="myBar" style="width:1%;font-size:15px;padding-top:4px"><span id="inststatus">70% Complete</span></div></div>');
 		var elem = document.getElementById("myBar1"); 
 		var width = 1;
 		var id = setInterval(frame, 10);
